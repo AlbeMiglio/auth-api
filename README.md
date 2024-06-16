@@ -16,7 +16,7 @@ The body of the request should be a JSON object containing the following fields:
 - `username`: The username of the user.
 - `password`: The hashed password of the user.
 - `secret_key`: A secret key for additional security.
-- 
+
 ```json
 {
     "username": "expectedUsername",
