@@ -1,20 +1,14 @@
 # Authentication API 
 
-## Overview
-This documentation provides guidelines on how to use the authentication endpoint to verify user credentials. The endpoint is hosted on a Java server and processes HTTP `POST` requests to authenticate users.
+This documentation provides guidelines on how to use the authentication endpoint to verify user credentials.\
+The endpoint is hosted on a Java server and processes HTTP `POST` requests to authenticate users.
 
-## Supported Authentication Systems
-The endpoint currently supports the following authentication systems:
-- **AuthMe**: https://dev.bukkit.org/projects/authme-reloaded
-
-## Endpoint
+### Endpoint
 
 The endpoint port can be configured in the `config.yml` file, together with a **secret key** for additional security.
 
-Example URL, with default port: `http://localhost:8080/auth`
-
-### Headers
-- `Content-Type: application/json`
+Example URL, with default port: `http://localhost:8080/auth` \
+Header: `Content-Type: application/json`
 
 ### Body
 The body of the request should be a JSON object containing the following fields:
@@ -40,5 +34,9 @@ The response will be a JSON object containing the following fields:
     "status": "valid"
 }
 ```
+
+### Supported Authentication Systems
+The endpoint currently supports the following authentication systems:
+- **AuthMe**: https://dev.bukkit.org/projects/authme-reloaded
 
 
